@@ -77,6 +77,12 @@ you may want to check out:
 - [PaperWM](https://github.com/paperwm/PaperWM) is a very interesting
   take on tiling windows managers built on top of the Gnome 3 shell.
 
+## Prerequisites
+
+These instructions assume you're running [Ubuntu](https://ubuntu.com/)
+desktop. Most recently tested on Ubuntu 20 LTS. That said, they should
+work, with minor changes, for most Linux distributions.
+
 ## Repository Organization
 
 This repository is organized as follows:
@@ -100,6 +106,9 @@ This repository is organized as follows:
 
 The instrutions available are:
 
+- [01-installing-xmonad](instructions/01-installing-xmonad.md)
+  describes the basics of installing `xmonad`.
+- [02-configuring-xmonad](instructions/02-configuring-xmonad.md) d
 
 ## Contact
 
