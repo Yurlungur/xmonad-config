@@ -22,7 +22,7 @@ which gives you all modules and extensions for `xmonad`. When you next
 log in to your computer, you will be able to select between different
 window managers, and choose `xmonad` as an option.
 
-## The essetials
+## The essentials
 
 Unfortunately, this will not entirely produce a workable `xmonad`
 environment. `xmonad` does not by default come with a way to launch
@@ -72,12 +72,23 @@ suckless-tools](https://tools.suckless.org/slock/).
 
 ## Extras
 
-If you want to take screen shots in `xmonad`, I suggest `scrot` via
+- If you want to take screen shots in `xmonad`, I suggest `scrot` via
 ```bash
 sudo apt install scrot
 ```
 
-If you want the transparent terminal wallpaper, you will need `terminator`
+- If you want the transparent terminal wallpaper, you will need `terminator`
 ```bash
 sudo apt install terminator
+```
+
+- If you want to use my hotkeys for volume control, make sure you have the `amixer` program.
+- If you want to use my hotkeys for controlling the backlight, you'll need `xbacklight`.
+
+- If you want my scripts for swapping to an external monitor or
+  turning off trackpad, copy them out of the scripts directory:
+```bash
+mkdir -p myscripts
+cp scripts trackpad-toggle.sh ~/myscipts
+cp scripts toggle_monitor.sh ~/myscripts
 ```

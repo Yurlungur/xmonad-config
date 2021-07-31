@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# This stuff runs only for xmonad
+#----------------------------------------------------------------------
+# Produces the expected left curser
+xsetroot -cursor_name left_ptr
+    
+# starts xScreenSaver at boot
+# You can instad use slock and xautolock
+# You don't have to start this here.
+# You could instead register it with
+# systemd
+# if [[ -z "$(pgrep xscreensaver)" ]]; then
+#     xscreensaver -no-splash &
+# fi
+
+# Add the menu key to the mod4 list
+xmodmap -e "add Mod4 = Menu"
+
+# Starts the compositing manager
+if [[ -z "$(pgrep compton)" ]]; then
+    compton &
+fi
+#
+# Set up an icon tray
+if [[ -z "$(pgrep trayer)" ]]; then
+    trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 15 --transparent true --tint 0x000000 --alpha 0 --height 32 &
+fi
+    
+# Starts a background terminal w/ tabbed htop
+if [[ -z "$(pgrep terminator)" ]]; then
+    terminator -b --geometry=1920x1048+0+32 &
+fi
+
+# Tells Java that Xmonad is non-reparenting
+_JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_AWT_WM_NONREPARENTING
+wmname LG3D
