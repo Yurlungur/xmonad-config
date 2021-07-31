@@ -131,7 +131,7 @@ calls the program in `dotfiles/home.xmonad.autostart`, which you can enable with
 ```bash
 cp dotfiles/home.xmonad.autostart ~/.xmonad/autostart
 ```
-Tis will be described in more detail below.
+This will be described in more detail below.
 
 ### Important note
 
