@@ -112,7 +112,7 @@ The instrutions available are:
   describes key details of configuring `xmonad`. It highlights any
   significant differences in hotkeys/capabilities that my config has
   over normal ones.
-- [03-configuring-cycle-wallpaper](instructions/03-configuring-cycle-wallpaper)
+- [03-configuring-cycle-wallpaper](instructions/03-configuring-cycle-wallpaper.md)
   describes how to configure my slideshow wallpaper script.
 - [04-configuring-extras](instructions/04-configuring-extras.md)
   describes how to configure my terminal editor, emacs, bashrc, and
