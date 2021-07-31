@@ -59,6 +59,8 @@ To see how to configure this terminal emulator,
 see [04-configuring-extras](04-configuring-extras.md).
 
 ### Manage Hooks
+
+These are manage hooks:
 ```haskell
 ------------------------------------------------------------------------
 -- Window rules:
