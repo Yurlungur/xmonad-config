@@ -47,14 +47,14 @@ which allow you to move between virtual desktops with the "I" and "O" keys on th
 `Win+i` and `Win+o` move one workspace left or right. 
 Add shift, and you drag the current window you're working on with you.
 
-- Different terminal editor:
+### Different terminal editor
 ```haskell
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
 myTerminal = "rxvt-unicode"
 ```
-meaning I've replaced the default terminal emulator with `rxvt-unicode`. 
+means I've replaced the default terminal emulator with `rxvt-unicode`. 
 To see how to configure this terminal emulator, 
 see [04-configuring-extras](04-configuring-extras.md).
 
