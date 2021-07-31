@@ -33,8 +33,6 @@ where `modm` is `mod4`, usually the Windows or command key,
 So this is conbination is Windows+Shift+C. 
 
 The main changes I have made are:
-
-- Extra hotkeys:
 ```haskell
 -- mod-o move to workspace to the right
     -- mod-i move to workspace to the left
