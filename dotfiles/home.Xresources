@@ -1,0 +1,94 @@
+Xft.dpi: 120
+
+xterm*font: terminus-12
+xterm*boldFont: terminus-12
+xterm*loginShell: true
+xterm*vt100*geometry: 80x50
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+xterm*foreground: rgb:a8/a8/a8
+xterm*background: rgb:00/00/00
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:a8/00/00
+xterm*color2: rgb:00/a8/00
+xterm*color3: rgb:a8/54/00
+xterm*color4: rgb:00/00/a8
+xterm*color5: rgb:a8/00/a8
+xterm*color6: rgb:00/a8/a8
+xterm*color7: rgb:a8/a8/a8
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:54/fc/54
+xterm*color11: rgb:fc/fc/54
+xterm*color12: rgb:54/54/fc
+xterm*color13: rgb:fc/54/fc
+xterm*color14: rgb:54/fc/fc
+xterm*color15: rgb:fc/fc/fc
+xterm*boldMode: false
+xterm*colorBDMode: true
+xterm*colorBD: rgb:fc/fc/fc
+
+URxvt.loginShell: true
+URxvt.geometry: 80x50
+URxvt.saveLines: 10000
+URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
+URxvt.foreground: rgb:a8/a8/a8
+URxvt.background: rgb:00/00/00
+URxvt.color0: rgb:00/00/00
+URxvt.color1: rgb:a8/00/00
+URxvt.color2: rgb:00/a8/00
+URxvt.color3: rgb:a8/54/00
+URxvt.color4: rgb:00/00/a8
+URxvt.color5: rgb:a8/00/a8
+URxvt.color6: rgb:00/a8/a8
+URxvt.color7: rgb:a8/a8/a8
+URxvt.color8: rgb:54/54/54
+URxvt.color9: rgb:fc/54/54
+URxvt.color10: rgb:54/fc/54
+URxvt.color11: rgb:fc/fc/54
+URxvt.color12: rgb:54/54/fc
+URxvt.color13: rgb:fc/54/fc
+URxvt.color14: rgb:54/fc/fc
+URxvt.color15: rgb:fc/fc/fc
+URxvt.colorBD: rgb:fc/fc/fc
+URxvt.font: xft:DejaVuSansMono:size=12
+URxvt.italicFont: xft:DejaVuSansMono:size=12
+URxvt.scrollBar: false
+URxvt.visualBell: true
+// this is SO AWESOME:
+URxvt.fading: 15
+// URxvt spells "eightBitInput" as "meta8" and defaults it to false
+
+// Clickable URLS:
+URxvt.perl-ext-common:  default,matcher,tabbed
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+// Make URLS blue
+URxvt.colorUL: #4682B4
+
+// Find the last 10 URLS and list them:
+URxvt.keysym.C-Delete:  perl:matcher:last
+URxvt.keysym.M-Delete:  perl:matcher:list
+
+// Tabbing color settings
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+// Yankable URLS:
+// Commands:
+// M-u: Enter selection mode
+// K: Select next URL
+// J: Select previous URL
+// RETURN: Open selected URL and return to normal mode
+// O: Open selecter URL and keep going
+// Y: Copy URL
+// ESC: Cancel URL selection mode
+// URxvt.perl-ext:      default,url-select
+// URxvt.keysym.M-u:    perl:url-select:select_next
+// URxvt.url-select.launcher:   /usr/bin/firefox -new-tab
+// URxvt.url-select.underline: true
+//
