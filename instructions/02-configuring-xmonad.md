@@ -56,7 +56,7 @@ myTerminal = "rxvt-unicode"
 ```
 means I've replaced the default terminal emulator with `rxvt-unicode`. 
 To see how to configure this terminal emulator, 
-see [04-configuring-extras](04-configuring-extras.md).
+see [05-configuring-rxvt-unicode](05-configuring-rxvt-unicode.md).
 
 ### Manage Hooks
 

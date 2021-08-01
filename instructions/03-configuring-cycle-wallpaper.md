@@ -81,5 +81,5 @@ Just run, e.g.,
 ```bash
 cycle_wallpaper.sh 1h &
 ```
-from somewhere. In [04-configuring-extras](04-configuring-extras.md)
+from somewhere. In [07-configuring-systemd](07-configuring-systemd.md)
 I will show how to register this program via `systemd`.

@@ -65,8 +65,7 @@ For a screensaver, there are a few options. In the past, I used
 sudo apt install xscreensaver
 ```
 
-But I experienced a bug where the screensaver crashed and left my
-computer unlocked. I therefore now prefer `slock` and `xautolock`,
+However, I now prefer the lighter-weight `slock` and `xautolock`,
 which are (conveniently) [provided by
 suckless-tools](https://tools.suckless.org/slock/).
 

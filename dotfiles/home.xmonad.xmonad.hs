@@ -232,12 +232,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_MonBrightnessUp ),   spawn "xbacklight -inc 5")
     , ((0, xF86XK_MonBrightnessDown ), spawn "xbacklight -dec 5")
 
-    -- Workaround for broken audio keys in clementine
-    -- , ((0, xF86XK_AudioPlay         ), spawn "clementine -t")
-    -- , ((0, xF86XK_AudioStop         ), spawn "clementine -s")
-    -- , ((0, xF86XK_AudioNext         ), spawn "clementine -f")
-    -- , ((0, xF86XK_AudioPrev         ), spawn "clementine -r")
-
+    -- Toggle touchpad
+    , ((modm, xK_F8 ), spawn "/home/jonahm/myscripts/trackpad-toggle.sh")
+    -- Toggle wallpaper
+    , ((modm, xK_F7 ), spawn "/home/jonahm/myscripts/toggle_monitor.sh")
+      
     -- Cycle left/right through workstations 
     -- mod-RightArrow move to workspace to the right  
     -- mod-LeftArrow move to workspace to the left  
@@ -272,31 +271,15 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Open emacs terminal
     , ((modm .|. shiftMask, xK_a ), spawn "emacsclient -c -e '(jmm-goto-term)'")
 
-    -- Call the file manager, Dolphin (doesn't exist)
-    --    , ((modm .|. shiftMask, xK_d ), spawn "dolphin")
-      
-    -- Call LibreOffice office suite
-    -- , ((modm .|. shiftMask, xK_o ), spawn "libreoffice")
-    , ((modm .|. shiftMask, xK_w), spawn "libreoffice")
-
-    -- Call Music player
-    , ((modm .|. shiftMask, xK_m ), spawn "clementine")
-
     -- Call Firefox
     , ((modm .|. shiftMask, xK_f ), spawn "firefox")
 
     -- Call pidgin
     , ((modm .|. shiftMask, xK_p ), spawn "pidgin")
 
-    -- Call email client (Thunderbird)
-    -- Doesn't work for some reason. Freeing up the space
-    , ((modm .|. shiftMask, xK_e ), spawn "evolution")
-
     -- Get a window list and go to a window you call
-    --    , ((modm .|. shiftMask, xK_g     ), windowPromptGoto myXPConfig)
     , ((modm .|. shiftMask, xK_g     ), goToSelected defaultGSConfig)
     -- Get a window list and summon a window you call
-    --    , ((modm .|. shiftMask, xK_b     ), windowPromptBring myXPConfig)
     , ((modm .|. shiftMask, xK_b     ), bringSelected defaultGSConfig)
     -- Grid-select a workspace
     , ((modm, xK_e                   ), gridselectWorkspace defaultGSConfig (\ws -> W.greedyView ws . W.shift ws))
@@ -337,12 +320,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Jump to three colummns
     , ((modm, xK_a), sendMessage $ JumpToLayout "ThreeColumns")
-
-    -- Minimizes a window
-    -- , ((modm, xK_m ), withFocused minimizeWindow)
-
-    -- Restores a minimized window
-    -- , ((modm, xK_r ), sendMessage RestoreNextMinimizedWin)
 
     -- tabbed controls
     , ((modm .|. controlMask, xK_h), sendMessage $ pullGroup L)

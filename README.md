@@ -114,10 +114,14 @@ The instrutions available are:
   over normal ones.
 - [03-configuring-cycle-wallpaper](instructions/03-configuring-cycle-wallpaper.md)
   describes how to configure my slideshow wallpaper script.
-- [04-configuring-bash](instructions/configuring-bash.md) describes my bashrc
-- [04-configuring-extras](instructions/04-configuring-extras.md)
-  describes how to configure my terminal editor, emacs, bashrc, and
-  systemd.
+- [04-configuring-bash](instructions/04-configuring-bash.md) describes my bashrc
+- [05-configuring-rxvt-unicode](instructions/05-configuring-rxvt-unicode.md)
+  describes how to configure the terminal editor.
+- [06-condiguring-emacs](instructions/06-condiguring-emacs.md)
+  describes how to configure emacs.
+- [07-configuring-systemd](instructions/07-configuring-system.md)
+  describes how to use systemd to have custom services start
+  automatically for you.
 
 ## Contact
 
