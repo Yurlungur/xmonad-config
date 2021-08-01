@@ -3,36 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(TeX-source-correlate-method (quote synctex))
- '(TeX-source-correlate-mode t)
- '(TeX-source-correlate-start-server (quote ask))
- '(TeX-view-program-list
-   (quote
-    (("Okular" "okular --unique %o#src:%n%b")
-     ("Evince" "evince %o"))))
- '(TeX-view-program-selection
-   (quote
-    ((output-pdf "Evince")
-     (output-pdf "Okular")
-     (output-dvi "xdvi")
-     (output-pdf "Evince")
-     (output-html "xdg-open"))))
- '(column-number-mode t)
- '(custom-enabled-themes (quote (tango-dark)))
- '(custom-safe-themes
-   (quote
-    ("549ccbd11c125a4e671a1e8d3609063a91228e918ffb269e57bd2cd2c0a6f1c6" default)))
- '(ecb-options-version "2.40")
- '(package-selected-packages (quote (markdown-mode dracula-theme slime haskell-mode)))
- '(preview-gs-options
-   (quote
-    ("-q" "-dNOSAFER" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
- '(preview-scale-function 1.5)
- '(python-mode-hook nil t)
- '(python-python-command "python3")
- '(python-remove-cwd-from-path nil)
- '(python-shell-interpreter "python3")
- '(show-paren-mode t))
+)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
