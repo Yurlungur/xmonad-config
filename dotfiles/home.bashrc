@@ -129,8 +129,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Source my ssh aliases. Hidden for security reasons.
-if [ -f ~/Dropbox/.my.sshaliases ]; then
+if [ -f ~/.my.sshaliases ]; then
 . ~/.my.sshaliases
 fi
 
@@ -139,8 +138,6 @@ startup_message=yes
 if [ "$startup_message" = yes ]; then
     # Cowsay
     cowsay -f dragon-and-cow "Hello, the time is $(date "+%k:%M, on %A, %d of %B, %Y. ")"
-    # A helpful startup message
-    echo "Aliases: poweroff=poff, reboot=rebo, suspend=susp. Have fun!"
 fi
 
 # Adds ssh agent

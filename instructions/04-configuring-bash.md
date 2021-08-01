@@ -50,8 +50,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Source my ssh aliases. Hidden for security reasons.
-if [ -f ~/Dropbox/.my.sshaliases ]; then
+if [ -f ~/.my.sshaliases ]; then
 . ~/.my.sshaliases
 fi
 ```
