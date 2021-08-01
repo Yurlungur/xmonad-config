@@ -114,6 +114,7 @@ The instrutions available are:
   over normal ones.
 - [03-configuring-cycle-wallpaper](instructions/03-configuring-cycle-wallpaper.md)
   describes how to configure my slideshow wallpaper script.
+- [04-configuring-bash](instructions/configuring-bash.md) describes my bashrc
 - [04-configuring-extras](instructions/04-configuring-extras.md)
   describes how to configure my terminal editor, emacs, bashrc, and
   systemd.
