@@ -1,4 +1,3 @@
--- Author: Jonah Miller
 -- xmonad config file (modified default).
 --
 -- 
@@ -124,9 +123,6 @@ myXPConfig = defaultXPConfig { autoComplete = Just 500000
                              , bgColor = "grey" 
                              , fgColor = "blue"
                              , font = "xft:DejaVuSansMono:size=10"
---                             , font = "-bitstream-bitstream vera sans-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252"
---                            , font = "-windows-proggycleansz-medium-r-normal--0-0-96-96-c-0-iso8859-1"
---                             , font = "-misc-proggycleantt-ce-medium-r-normal--0-0-0-0-c-0-ascii-0" 
 }
 
 ------------------------------------------------------------------------
@@ -219,9 +215,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Screenshots: this requires the scrot program for screenshots.
     -- Screenshot of a window  
-    , ((controlMask, xK_Print ), spawn "sleep 0.2; scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Storage/Pictures/screen_shots/'")
+    , ((controlMask, xK_Print ), spawn "sleep 0.2; scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/screen_shots/'")
     -- Screenshot of the whole screen  
-    , ((0, xK_Print ), spawn "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Storage/Pictures/screen_shots/'")
+    , ((0, xK_Print ), spawn "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/screen_shots/'")
 
     -- Enable laptop volume keys. If you prefer some weird keybinding,
     -- you can do that too.
@@ -233,9 +229,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_MonBrightnessDown ), spawn "xbacklight -dec 5")
 
     -- Toggle touchpad
-    , ((modm, xK_F8 ), spawn "/home/jonahm/myscripts/trackpad-toggle.sh")
+    , ((modm, xK_F8 ), spawn "~/myscripts/trackpad-toggle.sh")
     -- Toggle wallpaper
-    , ((modm, xK_F7 ), spawn "/home/jonahm/myscripts/toggle_monitor.sh")
+    , ((modm, xK_F7 ), spawn "~/myscripts/toggle_monitor.sh")
       
     -- Cycle left/right through workstations 
     -- mod-RightArrow move to workspace to the right  
@@ -286,8 +282,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Append a single line and date to a notes file
     , ((modm .|. shiftMask, xK_n     ), do
-         spawn ("date>>"++"/home/jonahm/notes.txt")
-         appendFilePrompt myXPConfig "/home/jonahm/notes.txt")
+         spawn ("date>>"++"~/notes.txt")
+         appendFilePrompt myXPConfig "~/notes.txt")
     
     -- Display the man page of something
     , ((modm, xK_F1), manPrompt myXPConfig)
@@ -300,11 +296,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Spawn a file manager
     , ((modm, xK_F3), spawn "thunar")
 
-    -- Starts all the programs I like to have open constantly
-    , ((modm, xK_F12), spawn "/home/jonahm/.xmonad/startup_applications.sh")
-
     -- Jumps to a new allpaper.
-    , ((modm, xK_F11), spawn "python3 /home/jonahm/myscripts/randomwallpaper.py")
+    , ((modm, xK_F11), spawn "python3 ~/myscripts/randomwallpaper.py")
 
     -- Jump to the fullscreen layout
     , ((modm, xK_f), sendMessage $ JumpToLayout "Full")
@@ -488,7 +481,7 @@ myLogHook = mempty --dynamicLog -- setWMName "LG3D"
 myStartupHook :: X()
 myStartupHook = do
   -- setWMName "LG3D" -- Tricks Java into working correctly
-  spawn "/home/jonahm/.xmonad/autostart" -- runs my startup programs
+  spawn "~/.xmonad/autostart" -- runs my startup programs
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
@@ -496,7 +489,7 @@ myStartupHook = do
 -- main = xmonad defaults We also call xmobar here. We can't run the
 -- loghook until xmobar is running, which is why we call it in main.
 main = do
-  xmproc <- spawnPipe "/usr/bin/xmobar /home/jonahm/.xmobarrc" --call xmobar
+  xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc" --call xmobar
   xmonad $ withUrgencyHook NoUrgencyHook  defaults 
       {
         manageHook = manageDocks <+> myManageHook

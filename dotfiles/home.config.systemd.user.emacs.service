@@ -1,0 +1,5 @@
+[Unit]
+Description=Make emacs run quickly in the background.
+
+[Service]
+ExecStart=emacs -u username --fg-daemon

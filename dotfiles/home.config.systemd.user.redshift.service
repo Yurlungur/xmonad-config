@@ -1,0 +1,5 @@
+[Unit]
+Description=Makes the screen red at night
+
+[Service]
+ExecStart=gtk-redshift -l 40:-103.5

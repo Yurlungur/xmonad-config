@@ -261,7 +261,6 @@ middle"
   (global-set-key [f9] 'compile))
 
 ;; Haskell mode
-; (load "/home/jonah/elisp/haskell-haskell-mode-6d7a3c4/haskell-site-file")
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 ;; Three types of indentation mode
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
@@ -315,12 +314,6 @@ middle"
 
 ; Mathematica
 (load-file-maybe "~/elisp/mathematica.el")
-; (if (file-exists-p "/home/jonah/elisp/math.el")
-;     (progn
-;       (autoload 'math "math" "Starts Mathematica" t)
-;       (autoload 'math-mode "math"
-; 	"Mode for editing Mathematica. Loading will result in more info." t)
-;       (setq auto-mode-alist (cons '("\\.m\\'" . math-mode) auto-mode-alist))))
 
 ; Racket
 (when (require-maybe 'geiser)

@@ -135,7 +135,7 @@ This will be described in more detail below.
 
 ### Important note
 
-Be sure to find-replace all instances of my username `jonahm` with your username.
+Be sure to check that all paths pointed to are reasonable on your machine.
 
 ## xmobar
 

@@ -1,0 +1,5 @@
+[Unit]
+Description=Cycle the wallpaper regularly
+
+[Service]
+ExecStart=/path/to/cycle_wallpaper.sh 1h
