@@ -104,7 +104,7 @@ This repository is organized as follows:
 
 ## Table of contents
 
-The instrutions available are:
+The instructions available are:
 
 - [01-installing-xmonad](instructions/01-installing-xmonad.md)
   describes the basics of installing `xmonad`.
@@ -117,9 +117,9 @@ The instrutions available are:
 - [04-configuring-bash](instructions/04-configuring-bash.md) describes my bashrc
 - [05-configuring-rxvt-unicode](instructions/05-configuring-rxvt-unicode.md)
   describes how to configure the terminal editor.
-- [06-condiguring-emacs](instructions/06-condiguring-emacs.md)
+- [06-configuring-emacs](instructions/06-configuring-emacs.md)
   describes how to configure emacs.
-- [07-configuring-systemd](instructions/07-configuring-system.md)
+- [07-configuring-systemd](instructions/07-configuring-systemd.md)
   describes how to use systemd to have custom services start
   automatically for you.
 
