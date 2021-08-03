@@ -68,7 +68,8 @@ here are some tiling window managers that *do* work with Wayland that
 you may want to check out:
 
 - [Waymonad](https://github.com/waymonad/waymonad) is a port of xmonad
-  to Wayland. Unfortunately the project appears dead.
+  to Wayland. While the original project appears dead, there's an active fork
+  [here](https://github.com/L-as/waymonad).
   
 - [Sway](https://swaywm.org/) is a port of the popular
   [i3](https://i3wm.org/) tiling window manager to Wayland. Sway is
