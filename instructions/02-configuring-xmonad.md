@@ -225,7 +225,7 @@ as shown in these screenshots:
 
 ![terminator-transparency](../figures/terminator-transparency.png)
 
-### Non-reparentying
+### Non-reparenting
 
 Java based programs can cause stuttering in xmonad. These environment
 variables help with this issue:
