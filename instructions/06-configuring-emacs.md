@@ -127,7 +127,7 @@ emacsclient
 instead of `emacs`. I have the following bash alias in my `~/.bash_aliases`:
 ```bash
 alias tmacs='emacsclient -nw'
-alias gmacs='emacsclient'
+alias gmacs='emacsclient -c'
 ```
 whichs is very convenient. 
 I describe how to start the server automatically in 
